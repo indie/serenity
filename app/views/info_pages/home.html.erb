@@ -1,0 +1,70 @@
+<% provide(:title, 'Home') %>
+
+<% if signed_in? %>
+   <div id="lft" class="box">
+     <section>
+       <%= render 'shared/micropost_form' %>
+     </section>
+ </div>
+
+ <div id="middle" class="box">
+     <h3>What's been overheard lately . . .</h3>
+      <%= render 'shared/feed' %>
+    </div>
+
+   <div id="rght" class="box">
+     <section>
+      <%= render 'shared/user_info' %>
+     </section>
+     <section>
+      <%= render 'shared/stats' %>
+     </section>
+</div>
+
+
+<% else %>
+
+
+<div id="tesla">
+
+<div id="page-home">
+
+  <div class="hero">
+    <div class="content-box">
+     
+      <br /><br /><br />
+
+      <div id="join_btn" class="join_btn">
+       <%= link_to "Join now!", signup_path, 
+                                class: "btn btn-large btn-primary" %>
+      </div>
+
+ 
+        <h1> &nbsp; </h1>
+
+
+    </div><!-- .content-box -->
+  </div><!-- .hero -->
+  <div class="stars">
+     <ul>
+     <li class="experience">
+       <h2>Experience</h2>
+       <p></p> </li>
+     
+      <li class="strength">
+        <h2>Strength</h2>
+        <p></p> </li>
+    
+      <li class="hope">
+          <h2>Hope</h2>
+          <p> </p></li>
+  
+ 
+    </ul>
+
+      </div><!-- #main-wrap -->
+        </body>
+
+
+
+<% end %>
