@@ -1,4 +1,4 @@
-Serenity::Application.routes.draw do
+Spaceminnow::Application.routes.draw do
 
   resources :users do
     member do
