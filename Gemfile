@@ -9,7 +9,6 @@ gem 'execjs'
 gem 'therubyracer'
 gem 'bootstrap'
 gem 'faker', '1.0.1'
-gem 'gmaps4rails'
 gem 'json'
 gem 'capistrano'
 
@@ -25,7 +24,7 @@ group :assets do
   gem 'uglifier', '1.2.3'
 end
 
-gem 'jquery-rails', '2.0.0'
+gem 'jquery-rails', '2.1.1'
 
 group :test, :development do
   gem 'rspec-rails', '2.10.0'
