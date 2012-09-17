@@ -19,7 +19,7 @@ test:
   timeout: 5000
 
 production:
-  adapter: mysql
-  database: db/production.mysql
+  adapter: pg
+  database: db/production.pg
   pool: 5
   timeout: 5000

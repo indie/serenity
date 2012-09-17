@@ -1,12 +1,11 @@
+
 require "bundler/capistrano"
 
-# Define your server here
-server "<ohinaa.com>", :web, :app, :db, primary: true
+server "66.175.217.135", :web, :app, :db, primary: true
 
-# Set application settings
-set :application, "<serenity>"
-set :user, "<hub>" # As defined on your server
-set :deploy_to, "/home/#{hub}/public/ohinaa.com/#{public}" # Directory in which the deployment will take place
+set :application, "serenity"
+set :user, "hub"
+set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
 
@@ -23,15 +22,15 @@ namespace :deploy do
   %w[start stop restart].each do |command|
     desc "#{command} unicorn server"
     task command, roles: :app, except: {no_release: true} do
-      run "/etc/init.d/unicorn_#{application} #{command}" # Using unicorn as the app server
+      run "/etc/init.d/unicorn_#{application} #{command}"
     end
   end
 
   task :setup_config, roles: :app do
     sudo "ln -nfs #{current_path}/config/nginx.conf /etc/nginx/sites-enabled/#{application}"
-    sudo "ln -nfs #{current_path}/config/unicorn_ini.sh /etc/init.d/unicorn_#{application}"
+    sudo "ln -nfs #{current_path}/config/unicorn_init.sh /etc/init.d/unicorn_#{application}"
     run "mkdir -p #{shared_path}/config"
-    put File.read("config/database.yml"), "#{shared_path}/config/database.yml"
+    put File.read("config/database.example.yml"), "#{shared_path}/config/database.yml"
     puts "Now edit the config files in #{shared_path}."
   end
   after "deploy:setup", "deploy:setup_config"
