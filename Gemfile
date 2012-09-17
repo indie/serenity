@@ -11,6 +11,7 @@ gem 'bootstrap'
 gem 'faker', '1.0.1'
 gem 'gmaps4rails'
 gem 'json'
+gem 'capistrano'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
