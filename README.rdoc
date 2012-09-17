@@ -1,2 +1,2 @@
-Alpha version "serenity" released Sept 15, 2012
+Alpha version "serenity"
 

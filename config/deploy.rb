@@ -1,16 +1,15 @@
-
 require "bundler/capistrano"
 
 server "66.175.217.135", :web, :app, :db, primary: true
 
 set :application, "serenity"
 set :user, "hub"
-set :deploy_to, "/home/#{user}/apps/#{application}"
+set :deploy_to, "/home/#{user}/public/ohinaa.com/public/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
 
 set :scm, "git"
-set :repository, "git@github.com:indie/#{serenity}.git"
+set :repository, "git@github.com:indie/serenity.git"
 set :branch, "master"
 
 default_run_options[:pty] = true
