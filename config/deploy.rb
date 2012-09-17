@@ -6,7 +6,7 @@ server "<ohinaa.com>", :web, :app, :db, primary: true
 # Set application settings
 set :application, "<serenity>"
 set :user, "<hub>" # As defined on your server
-set :deploy_to, "/home/#{hub}/public/ohinaa/#{public}" # Directory in which the deployment will take place
+set :deploy_to, "/home/#{hub}/public/ohinaa.com/#{public}" # Directory in which the deployment will take place
 set :deploy_via, :remote_cache
 set :use_sudo, false
 
