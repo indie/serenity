@@ -11,6 +11,7 @@ gem 'bootstrap'
 gem 'faker', '1.0.1'
 gem 'json'
 gem 'capistrano'
+gem 'mysql2'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
@@ -44,5 +45,5 @@ group :test do
 end
 
 group :production do
-  gem 'pg', '0.12.2'
+  gem 'mysql', '2.8.1'
 end
