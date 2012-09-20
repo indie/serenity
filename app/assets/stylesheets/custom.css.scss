@@ -349,7 +349,6 @@ html[xmlns] #nav {
   border-left: 4px solid #48351C;
   border-bottom: 4px solid #48351C;
   border-right: 3px solid #48351C;
-
   background: #f3efed;
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
@@ -589,7 +588,7 @@ footer.main {
     padding: 17px 0 19px;
     text-align: left;
     width: 100%;
-    border-top: 3px solid #48351c; 
+    border-top: 3px solid #d7cfba; 
 
 }
 
@@ -652,12 +651,12 @@ footer.main .rightmost {
 
 
 footer.main {
-    background: -moz-linear-gradient(center top , #f3efed 0px, #C6C291 100%) repeat scroll 0 0 #988d7e;
-    background: webkit-linear-gradient(center top , #f3efed 0px, #C6C291 100%) repeat scroll 0 0 #988d7e;
-    background: -webkit-linear-gradient(center top , #f3efed 0px, #C6C291 100%) repeat scroll 0 0 #988d7e;
-    background: linear-gradient(center top , #f3efed 0px, #C6C291 100%) repeat scroll 0 0 #988d7e;
+    background: -moz-linear-gradient(center top , #f6f0e3 0px, #e8dcc0 100%) repeat scroll 0 0 #d7cfba;
+    background: webkit-linear-gradient(center top , #f6f0e3 0px, #e8dcc0 100%) repeat scroll 0 0 #d7cfba;
+    background: -webkit-linear-gradient(center top , #f6f0e3 0px, #e8dcc0 100%) repeat scroll 0 0 #d7cfba;
+    background: linear-gradient(center top , #f6f0e3 0px, #e8dcc0 100%) repeat scroll 0 0 #d7cfba;
     background: -o-linear-gradient(top, 
-           rgba(243, 239, 237, 1) 0px, 
+           rgba(246, 240, 227, 1) 0px, 
            rgba(198, 194, 145, 0) 250px);
      background-position: center top, center top;
      background-repeat: no-repeat, repeat-x;}
@@ -685,13 +684,12 @@ body.headless header.main, body.headless footer.main {
 
 #footer-container {
     font-family: 'Signika', sans-serif;
-    background-color: #C6C291;
+    background-color: #e8dcc0;
     opacity: 0.9317;
     height: 100%;
     max-height: 53px;
     width: 100%;
     padding-top: 3px;
-
 }
 
 
@@ -891,28 +889,28 @@ input, textarea, select, .uneditable-input {
 }
 
 .deletelstg {
-  color: #d99a02;
+  color: #b76d47;
   align: rightmost;
   font-size: 11px;
   margin: 2px;
 }
 
 .deletelstg a:hover {
-  color: #d99a02;
+  color: #b76d47;
   font-size: 11px;
   margin: 2px;
 }
 
 
 .showlstg {
-  color: #d99a02;
+  color: #b76d47;
   align: rightmost;
   font-size: 11px;
   margin: 2px;
 }
 
 .showlstg a:hover {
-  color: #d99a02;
+  color: #b76d47;
   font-size: 11px;
   margin: 2px;
 }
@@ -940,7 +938,7 @@ aside {
 /* OK */
 
 #page-home .hero {
-  /* background: #e4eab0 url('textured_dots_tan.png') repeat-x; */
+  background: #e4eab0 url('textured_dots_tan.png') repeat;
   height: auto; }
 
 #page-home .stars {

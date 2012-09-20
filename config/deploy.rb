@@ -1,6 +1,6 @@
 require "bundler/capistrano"
 
-server "66.175.217.135", :web, :app, :db, primary: true
+server "198.74.48.210", :web, :app, :db, primary: true
 
 set :application, "serenity"
 set :user, "hub"
