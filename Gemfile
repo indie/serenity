@@ -12,7 +12,6 @@ gem 'faker', '1.0.1'
 gem 'json'
 gem 'unicorn'
 gem 'capistrano'
-gem 'mysql2'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
