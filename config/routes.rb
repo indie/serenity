@@ -25,6 +25,7 @@ Spaceminnow::Application.routes.draw do
   match '/aa', to: 'info_pages#aa'
   match '/na', to: 'info_pages#na'
   match '/community', to: 'info_pages#community'
+  match '/donations', to: 'info_pages#donations'
 
   #Footer Info_Pages
   match '/tos', to: 'info_pages#tos'
