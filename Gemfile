@@ -1,4 +1,4 @@
- source 'https://rubygems.org'
+source 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
 gem 'bootstrap-sass', '2.0.0'
@@ -10,7 +10,7 @@ gem 'therubyracer'
 gem 'bootstrap'
 gem 'faker', '1.0.1'
 gem 'json'
-gem 'unicorn'
+gem 'apache2'
 gem 'capistrano'
 
 group :development, :test do
