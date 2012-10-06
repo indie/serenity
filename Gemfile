@@ -10,6 +10,7 @@ gem 'therubyracer'
 gem 'bootstrap'
 gem 'faker', '1.0.1'
 gem 'json'
+gem 'unicorn'
 gem 'capistrano'
 
 group :development, :test do
