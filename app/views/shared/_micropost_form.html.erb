@@ -1,7 +1,7 @@
 <%= form_for(@micropost) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="field">
-    <%= f.text_area :content, placeholder: "What have you overheard lately?  700 characters max" %>
+    <%= f.text_area :content, placeholder: "ADD NEW items here (1200 characters max).  What have you overheard lately?  To read what's new, start 'following' some fellowshippers; their posts will show up automatically and in real time!" %>
   </div>
   <%= f.submit "Post", class: "btn btn-large btn-primary" %>
 <% end %>

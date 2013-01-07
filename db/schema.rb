@@ -45,12 +45,15 @@ ActiveRecord::Schema.define(:version => 20120903124120) do
     t.text     "size"
     t.string   "state"
     t.integer  "bid"
+    t.integer  "user_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
     t.float    "latitude"
     t.float    "longitude"
     t.boolean  "gmaps"
   end
+
+  add_index "spaces", ["user_id", "created_at"], :name => "index_spaces_on_user_id_and_created_at"
 
   create_table "users", :force => true do |t|
     t.string   "name"

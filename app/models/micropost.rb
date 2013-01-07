@@ -4,7 +4,7 @@ class Micropost < ActiveRecord::Base
   
   validates :content, presence: true
   validates :user_id, presence: true
-  validates :content, :length => { :maximum => 700 }
+  validates :content, :length => { :maximum => 1200 }
   
 
   default_scope order: 'microposts.created_at DESC'
