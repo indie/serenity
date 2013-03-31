@@ -4,8 +4,8 @@ server "198.74.48.210", :web, :app, :db, primary: true
 
 set :application, "serenity"
 set :user, "hub"
-set :deploy_to, "/home/#{user}/public/ohinaa.com/public/#{application}"
-set :deploy_via, :remote_cache
+set :deploy_to, "/home/hub/public/ohinaa.com/public/#{application}"
+# set :deploy_via, :remote_cache
 set :use_sudo, false
 
 set :scm, "git"
@@ -48,3 +48,20 @@ namespace :deploy do
   end
   before "deploy", "deploy:check_revision"
 end
+
+# if you want to clean up old releases on each deploy uncomment this:
+# after "deploy:restart", "deploy:cleanup"
+
+# if you're still using the script/reaper helper you will need
+# these http://github.com/rails/irs_process_scripts
+
+# If you are using Passenger mod_rails uncomment this:
+namespace :deploy do
+   task :start do ; end
+   task :stop do ; end
+   task :restart, :roles => :app, :except => { :no_release => true } do
+     run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
+   end
+ end
+
+ 
