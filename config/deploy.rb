@@ -8,8 +8,8 @@ set :deploy_to, "/home/hub/public/ohinaa.com/public/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
 
-# default_environment['PATH'] = '/home/hub/.rbenv/versions/1.9.3-p194/bin:$PATH'
-# default_environment['GEM_PATH']= '/home/hub/.gem/ruby/1.9.1'
+default_environment['PATH'] = '/home/hub/.rbenv/versions/1.9.3-p194/bin:$PATH'
+default_environment['GEM_PATH']= '/home/hub/.gem/ruby/1.9.1'
 
 set :scm, "git"
 set :repository, "git@github.com:indie/serenity.git"

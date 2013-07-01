@@ -1,0 +1,5 @@
+This is the project I submitted for my original codefellows application; it is the first "live" Rails app I attempted, built via Michael Hartl's Rails 3 Tutorial book.  
+
+It works, and can be found live online at:  http://www.ohinaa.com
+
+It had a bunch of users and posts at one time, but my Linode blew up one day and I didn't have a backup of the DB  ... there's still a bunch of DB stuff I've not yet learned.   :)
